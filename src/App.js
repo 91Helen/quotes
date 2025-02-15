@@ -4,7 +4,7 @@ import './App.css';
 class App extends Component{
 
  state = {
-content:null,
+quote:null,
 author:null
 }
 
@@ -12,15 +12,15 @@ author:null
 const url ="https://quotes-api-self.vercel.app/quote";
 const response = await fetch(url);
 const data = await response.json();
-this.setState({content:data.content, author: data.author})
-console.log (data.content, data.author);
+this.setState({content:data.quote, author: data.author})
+console.log (data.quote, data.author);
   }
 
   render() {
    
     return (
       <div>
-      <p>{this.state.content}</p>  
+      <p>{this.state.quote}</p>  
     <p>{this.state.author}</p>
       </div>
     );
