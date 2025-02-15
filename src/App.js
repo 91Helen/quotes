@@ -12,7 +12,7 @@ author:null
 const url ="https://quotes-api-self.vercel.app/quote";
 const response = await fetch(url);
 const data = await response.json();
-this.setState({content:data.quote, author: data.author})
+this.setState({quote:data.quote, author: data.author})
 console.log (data.quote, data.author);
   }
 
