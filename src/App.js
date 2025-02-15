@@ -1,10 +1,9 @@
-
 import { Component } from 'react';
 import './App.css';
 
 class App extends Component{
 
-state = {
+ state = {
 content:null,
 author:null
 }
@@ -26,7 +25,6 @@ console.log (data.content, data.author);
       </div>
     );
   }
-
 }
 
 export default App;
